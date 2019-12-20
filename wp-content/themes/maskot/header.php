@@ -107,3 +107,56 @@
         </div>
     </div>
 </header>
+
+<nav>
+  <div class="x-container">
+    <div class="x-flex">
+      <div class="left">
+        <h3>Para dueños</h3>
+        <ul>
+          <?php
+            $services = get_field('services',2);
+            if (!empty($services)){
+              foreach ($services as $service) {
+                if (!$service['k9']) {
+                ?>
+                <li>
+                  <a href="<?php echo $service['link'];?>">
+                    <img src="<?php echo $service['imagen'];?>">
+                    <h3><?php echo $service['title'];?></h3>
+                  </a>
+                </li>
+                <?php
+                }
+              }
+            }
+          ?>
+        </ul>
+      </div>
+      <div class="right">
+        <h3>Para entidades</h3>
+        <ul>
+          <?php
+            $services = get_field('services',2);
+            if (!empty($services)){
+              foreach ($services as $service) {
+                if ($service['k9']) {
+                ?>
+                <li>
+                  <a href="<?php echo $service['link'];?>">
+                    <img src="<?php echo $service['imagen'];?>">
+                    <h3><?php echo $service['title'];?></h3>
+                  </a>
+                </li>
+                <?php
+                }
+              }
+            }
+          ?>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<div class="nav-ff"></div>

@@ -27,3 +27,15 @@ $(window).scroll(function(){
 		$('header').removeClass('header-active');
 	}
 });
+
+$('#menu-item-119').on('mouseenter',function(){
+	$('header').addClass('header-active');
+	$('.nav-ff').addClass('active');
+	$('nav').addClass('active');
+});
+
+$('.nav-ff').on('click',function(){
+	$('header').removeClass('header-active');
+	$('.nav-ff').removeClass('active');
+	$('nav').removeClass('active');
+});

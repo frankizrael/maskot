@@ -1,0 +1,294 @@
+@import "utilities";
+.single-casos-s {
+    margin-top: 120px;
+}
+.breadcrumb {
+	ul {
+		display: flex;
+	}
+	li {
+	    font-family: 'Nunito', sans-serif;
+	    font-weight: 700;
+	    color: #081116;
+	    text-transform: uppercase;
+	    font-size: 12px;
+	    a {
+		    font-family: 'Nunito', sans-serif;
+		    color: #081116;
+		    font-weight: 400;
+		    text-transform: uppercase;
+		    font-size: 12px;
+		}
+		.separator {
+		    width: 20px;
+		    display: block;
+		    position: relative;
+		    &:before {
+			    content: '';
+			    position: absolute;
+			    width: 5px;
+			    height: 5px;
+			    border-right: solid 1px #081116;
+			    border-bottom: solid 1px #081116;
+			    transform: rotate(-45deg);
+			    top: 6px;
+			    left: 6px;
+			}
+		}
+	}
+}
+.title-index {
+    text-align: center;
+    margin-bottom: 45px;
+    h1 {
+	    font-size: 48px;
+	    font-weight: 400;
+	    b {
+		    font-weight: 700;
+		    color: #05b93c;
+		}
+	}
+	.bajada {
+	    font-size: 21px;
+	    color: #192023;
+	}
+}
+
+.content-casos {
+	display: flex;
+    margin-bottom: 20px;
+	.caso_item {
+	    border-radius: 30px;
+	    box-shadow: 0px 5px 16.6px 4.4px rgba(8, 17, 22, 0);
+	    background: white;
+	    margin: 10px;
+	    transition: 0.3s;
+	    width: calc(33.33% - 20px);
+	    border: solid 1px #e2e2e2;
+	    margin-bottom: 30px;
+	    &:hover {
+	    	box-shadow: 0px 5px 16.6px 4.4px rgba(8, 17, 22, 0.12);
+	    }
+	    .caso_box {
+		    padding: 25px;
+		    .caso_imagen {
+		    	img {
+				    width: 100%;
+				}
+		    }
+			.caso_title {
+				margin-bottom: 18px;
+				h2 {
+				    font-size: 29px;
+				    color: #081116;
+				}
+				.bajada {
+				    color: #081116;
+				    font-size: 14px;
+				    line-height: 22px;
+				}
+			}
+			.caso_content {
+			    font-size: 16px;
+			    .content_top {
+				    font-weight: 700;
+				    color: #05b93c;
+				}
+				.link {
+					margin-top: 25px;
+					a {
+					    color: white;
+					    background: #05b93c;
+					    display: inline-block;
+					    text-transform: uppercase;
+					    font-family: 'Nunito', sans-serif;
+					    padding: 9px;
+					    min-width: 150px;
+					    text-align: center;
+					    border-radius: 30px;
+					}
+				}
+			}
+		}
+	}
+}
+
+.casos-exito-related {
+    margin-top: 80px;
+    padding-top: 80px;
+    background: #f1f1f1;
+    margin-bottom: 80px;
+    padding-bottom: 80px;
+    .caso_item {
+	    border-radius: 30px;
+	    box-shadow: 0px 5px 16.6px 4.4px rgba(8, 17, 22, 0);
+	    background: white;
+	    margin: 10px;
+	    transition: 0.3s;
+	    &:hover {
+	    	box-shadow: 0px 5px 16.6px 4.4px rgba(8, 17, 22, 0.12);
+	    }
+	    .caso_box {
+		    padding: 25px;
+		    .caso_imagen {
+		    	img {
+				    width: 100%;
+				}
+		    }
+			.caso_title {
+				margin-bottom: 18px;
+				h2 {
+				    font-size: 29px;
+				    color: #081116;
+				}
+				.bajada {
+				    color: #081116;
+				    font-size: 14px;
+				    line-height: 22px;
+				}
+			}
+			.caso_content {
+			    font-size: 16px;
+			    .content_top {
+				    font-weight: 700;
+				    color: #05b93c;
+				}
+				.link {
+					margin-top: 25px;
+					a {
+					    color: white;
+					    background: #05b93c;
+					    display: inline-block;
+					    text-transform: uppercase;
+					    font-family: 'Nunito', sans-serif;
+					    padding: 9px;
+					    min-width: 150px;
+					    text-align: center;
+					    border-radius: 30px;
+					}
+				}
+			}
+		}
+	}
+	.swiper-button-next {
+	    right: -40px;
+	    color: #05b93c;
+	}
+	.swiper-button-prev {
+	    left: -40px;
+	    color: #05b93c;
+	}
+}
+
+.only-single {
+	.x-flex {
+	    justify-content: space-between;
+	}
+	.right {
+	    width: calc(50% - 20px);
+	    .content-casos-s {
+	    	.descp {
+			    font-size: 20px;
+			}
+			.tag {
+			    font-size: 20px;
+			    color: #05b93c;
+			    font-weight: 700;
+			}
+	    }
+		.title-casos-s {
+			.bajada {
+			    font-size: 21px;
+			    margin-bottom: 50px;
+			}
+			 h1 {
+			    font-size: 60px;
+			    line-height: 48px;
+			    margin-bottom: 10px;
+			}
+			.tag {
+			    font-family: 'Nunito', sans-serif;
+			    font-size: 23px;
+			    margin-bottom: 30px;
+			}
+		}
+		.link {
+			margin-top: 45px;
+			.btn {
+			    font-family: 'Nunito', sans-serif;
+			    color: white;
+			    text-transform: uppercase;
+			    border-radius: 30px;
+			    display: inline-block;
+			    background: #05b93c;
+			    padding: 9px 15px;
+			    min-width: 135px;
+			    text-align: center;
+			} 
+		}
+	}
+	.left {
+	    width: calc(50% - 20px);
+	    img {
+	    	max-width: 100%;
+	    }
+	}
+	.box {
+	    border-radius: 30px;
+	    box-shadow: 0px 5px 16.6px 4.4px rgba(8, 17, 22, 0.12);
+	    padding: 40px;
+	}
+	.instalaciones_item {
+	    width: 30%;
+	    img {
+		    width: 100%;
+		}
+	}
+	.list-iframe {
+	    display: flex;
+	    justify-content: space-between;
+	}
+	.content-p {
+	    margin-bottom: 20px;
+	}
+	.title-p {
+	    margin-bottom: 20px;
+	    h2 {
+		    display: flex;
+		    align-items: center;
+		    font-size: 30px;
+		    color: #05b93c;
+		}
+		i {
+		    height: 53px;
+		    width: 68px;
+		    position: relative;
+		    top: -20px;
+		    margin-right: 10px;
+		}
+	}
+	.antes-despues {
+	    margin-top: 120px;
+	} 
+	.content-lines {
+	    height: 200px;
+	    position: relative;
+	    .timer {
+		    position: absolute;
+		    display: flex;
+		    align-items: center;
+		    max-width: 163px;
+		    left: 100px;
+		    top: 30px;
+		    i {
+			    width: 34px;
+			    height: 34px;
+			    margin-right: 10px;
+			    flex: none;
+			    svg {
+				    width: 100%;
+				}
+			}
+		}
+	}
+}

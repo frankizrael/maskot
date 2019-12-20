@@ -201,31 +201,31 @@ $id = get_the_ID();
 						  'numberposts' => 6,
 						  'post_type'   => 'casos'
 						);						 
-						$casos = get_posts( $args );
-			        	if (!empty($casos)){
-			        		foreach ($casos as $caso) {
+						$casoss = get_posts( $args );
+			        	if (!empty($casoss)){
+			        		foreach ($casoss as $cass) {
 			        			?>		        
 						        <div class="swiper-slide">
 						        	<div class="caso_item">
 										<div class="caso_box">
 											<div class="caso_imagen">
-												<img src="<?php echo the_post_thumbnail_url($caso->ID); ?>">
+												<img src="<?php echo get_the_post_thumbnail_url($cass->ID); ?>">
 											</div>
 											<div class="caso_title">
-												<h2><?php echo get_the_title($caso->ID); ?></h2>
+												<h2><?php echo get_the_title($cass->ID); ?></h2>
 												<div class="bajada">
-													<?php echo get_field('date',$caso->ID); ?>
+													<?php echo get_field('date',$cass->ID); ?>
 												</div>
 											</div>
 											<div class="caso_content">
 												<div class="content_top">
-													<?php echo get_field('tag',$caso->ID); ?>
+													<?php echo get_field('tag',$cass->ID); ?>
 												</div>
 												<div class="content_descp">
-													<?php echo get_field('resumen',$caso->ID); ?>
+													<?php echo get_field('resumen',$cass->ID); ?>
 												</div>
 												<div class="link">
-													<a href="<?php echo get_permalink($caso->ID); ?>" class="btn">Ver caso</a>
+													<a href="<?php echo get_permalink($cass->ID); ?>" class="btn">Ver caso</a>
 												</div>
 											</div>
 										</div>										
@@ -236,15 +236,15 @@ $id = get_the_ID();
 			        	}
 			        ?>
 			    </div>
-				<div class="swiper-button-prev"></div>
-			    <div class="swiper-button-next"></div>
 			</div>
+			<div class="swiper-button-prev"></div>
+			<div class="swiper-button-next"></div>
 		</div>
 	</div>
 </section>
 <section class="blog">
 	<div class="x-container">
-		<div class="title-services">
+		<div class="title-services not-service">
 			<h2><?php the_field('title_blog');?></h2>
 			<p class="sub-title"><?php the_field('subtitle_blog');?></p>
 		</div>
@@ -253,7 +253,7 @@ $id = get_the_ID();
 			<?php
 	        	$args = array(
 				  'numberposts' => 4,
-				  'post_type'   => 'posts'
+				  'post_type'   => 'post'
 				);						 
 				$casos = get_posts( $args );
 	        	if (!empty($casos)){
@@ -262,7 +262,7 @@ $id = get_the_ID();
 				        <div class="blog-item">
 				        	<div class="blog_box">
 								<div class="blog_imagen">
-									<img src="<?php echo the_post_thumbnail_url($caso->ID); ?>">
+									<img src="<?php echo get_the_post_thumbnail_url($caso->ID); ?>">
 								</div>
 								<div class="blog_title">
 									<h2><?php echo get_the_title($caso->ID); ?></h2>

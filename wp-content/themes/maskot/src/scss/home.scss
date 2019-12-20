@@ -94,6 +94,17 @@
 	    font-size: 20px;
 	    color: #192023;
 	}
+	&.not-service {
+	    text-align: center;
+	    h2 {
+		    max-width: 545px;
+		    margin: auto;
+		    margin-bottom: 20px;
+		    b {
+			    display: inline;
+			}
+		}
+	}
 }
 .servicios {
     padding: 50px 0px;    
@@ -292,11 +303,18 @@
 .casos-exito {
     margin-top: 80px;
     padding-top: 80px;
+    background: #f1f1f1;
+    margin-bottom: 80px;
+    padding-bottom: 80px;
     .caso_item {
 	    border-radius: 30px;
-	    box-shadow: 0px 5px 16.6px 4.4px rgba(8, 17, 22, 0.12);
+	    box-shadow: 0px 5px 16.6px 4.4px rgba(8, 17, 22, 0);
 	    background: white;
 	    margin: 10px;
+	    transition: 0.3s;
+	    &:hover {
+	    	box-shadow: 0px 5px 16.6px 4.4px rgba(8, 17, 22, 0.12);
+	    }
 	    .caso_box {
 		    padding: 25px;
 		    .caso_imagen {
@@ -304,9 +322,102 @@
 				    width: 100%;
 				}
 		    }
-		    .caso_title {
-		    	
+			.caso_title {
+				margin-bottom: 18px;
+				h2 {
+				    font-size: 29px;
+				    color: #081116;
+				}
+				.bajada {
+				    color: #081116;
+				    font-size: 14px;
+				    line-height: 22px;
+				}
+			}
+			.caso_content {
+			    font-size: 16px;
+			    .content_top {
+				    font-weight: 700;
+				    color: #05b93c;
+				}
+				.link {
+					margin-top: 25px;
+					a {
+					    color: white;
+					    background: #05b93c;
+					    display: inline-block;
+					    text-transform: uppercase;
+					    font-family: 'Nunito', sans-serif;
+					    padding: 9px;
+					    min-width: 150px;
+					    text-align: center;
+					    border-radius: 30px;
+					}
+				}
+			}
+		}
+	}
+	.swiper-button-next {
+	    right: -40px;
+	    color: #05b93c;
+	}
+	.swiper-button-prev {
+	    left: -40px;
+	    color: #05b93c;
+	}
+}
+.blog-flex {
+	display: flex;
+    justify-content: space-between;
+    .blog-item {
+	    width: calc(25% - 20px);
+		.blog_title {
+		    text-align: center;
+		    padding: 20px 25px;
+		    h2 {
+			    font-size: 20px;
+			    line-height: 23px;
+			}
+			.bajada {
+			    margin: 18px 0px;
+			    font-size: 14px;
+			    line-height: 22px;
+			    color: #05b93c;
+			    min-height: 22px;
+			}
+			.link {
+				a {
+				    border-radius: 20px;
+				    border: solid 2px #05b93c;
+				    display: inline-block;
+				    text-transform: uppercase;
+				    font-family: 'Nunito', sans-serif;
+				    color: #05b93c;
+				    padding: 7px 20px;
+				    font-weight: 700;
+				    transition: 0.3s;
+				}
+			}
+		}
+	    .blog_box {
+		    overflow: hidden;
+		    border-radius: 30px;
+		    border: solid 1px #e2e2e2;
+		    transition: 0.3s;
+		    box-shadow: 0px 5px 16.6px 4.4px rgba(8, 17, 22, 0);
+		    &:hover {
+		    	box-shadow: 0px 5px 16.6px 4.4px rgba(8, 17, 22, 0.12);
+		    	.link {
+					a {
+					    background: #05b93c;
+					    color: white;
+					}
+				}
 		    }
 		}
 	}
+}
+.blog {
+    padding-bottom: 150px;
+    margin-bottom: 100px;
 }

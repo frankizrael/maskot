@@ -9,14 +9,12 @@ $id = get_the_ID();
 			<ul>
 				<li><a href="<?php echo site_url(); ?>">Home</a></li>
 				<li><i class="separator"></i></li>
-				<li><a href="<?php echo site_url(); ?>/casos">Casos de éxito</a></li>
-				<li><i class="separator"></i></li>
-				<li><?php the_title(); ?></li>
+				<li>Casos de éxito</li>
 			</ul>
 		</div>
 		<div class="title-index">
-			<h1><?php the_title(); ?></h1>
-			<p class="bajada"><?php the_field('resumen'); ?></p>
+			<h1>Casos <b>de éxito</b></h1>
+			<p class="bajada">Mascotas rehabilitadas y entrenadas</p>
 		</div>
 		<div class="content-casos">
 			<?php
@@ -31,10 +29,10 @@ $id = get_the_ID();
 			        	<div class="caso_item">
 							<div class="caso_box">
 								<div class="caso_imagen">
-									<img src="<?php echo the_post_thumbnail_url($caso->ID); ?>">
+									<img src="<?php echo get_the_post_thumbnail_url($caso->ID); ?>">
 								</div>
 								<div class="caso_title">
-									<h2><?php echo get_title($caso->ID); ?></h2>
+									<h2><?php echo get_the_title($caso->ID); ?></h2>
 									<div class="bajada">
 										<?php echo get_field('date',$caso->ID); ?>
 									</div>
